@@ -74,8 +74,13 @@ html, body {
 	text-align: center;
 }
 
-a {
+a, label {
 	color: #195D73;
+}
+
+.active {
+
+	text-decoration: underline;
 }
 
 .header {
@@ -130,9 +135,17 @@ a {
 	height: 4.725em;
 }
 
+.row-spacer-small {
+	height: 2em;
+}
+
 .title {
 	font-size: 1.65em;
 	margin-bottom: 0.5em;
+}
+
+.subtitle {
+	font-size: 0.875em;
 }
 
 .caps-link {
@@ -180,10 +193,12 @@ hr {
 }
 
 .navy-button {
+	font-weight: 700;
+	font-size: 0.865em;
 	background: #195D73;
 	border-radius: 3px;
 	color: #fff;
-	padding: 5px 10px 6px 10px;
+	padding: 7px 15px 8px 15px;
 }
 
 /*LOG IN VIEW*/
