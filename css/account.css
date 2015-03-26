@@ -1,0 +1,77 @@
+html.account, body.account {
+	text-align: left;
+}
+
+.module {
+	background: #f7f9fa;
+	padding: 15px;
+	overflow: auto;
+}
+
+.module-title {
+	font-weight: 700;
+	border-bottom: 1px solid #b6c3cd;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+.module-left {
+	width: 50%;
+	float: left;
+}
+
+.module-right {
+	width: 50%;
+	float: right;
+}
+
+.module-links {
+	margin-top: 15px;
+	font-size: 0.875em;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.title26 {
+	font-size: 1.65em;
+}
+
+.title18 {
+	font-size: 1.25em;
+}
+
+ul.transaction-history {
+	margin: 0;
+	padding: 0;
+}
+
+.transaction-history li {
+	list-style: none;
+	padding: 20px;
+	overflow: auto;
+}
+
+.transaction-history li:nth-child(even) {
+	background: #fff;
+}
+
+ul.form-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.form-list li {
+	margin-bottom: 15px;
+}
+
+.form-list input {
+	width: 100%;
+	background: #f7f9fa;
+	border: none;
+	padding: 8px 5px;
+}
