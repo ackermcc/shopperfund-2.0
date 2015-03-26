@@ -75,3 +75,15 @@ ul.form-list {
 	border: none;
 	padding: 8px 5px;
 }
+
+/*OFFERS*/
+
+.card-img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.card-grid .card {
+	padding: 10px;
+}
+
