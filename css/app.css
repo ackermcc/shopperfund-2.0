@@ -269,6 +269,19 @@ hr {
 	background: rgba(240,70,94,1);
 }
 
+.close-alert {
+	float: right;
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.alert {
+	width: 100%;
+	padding: 10px 20px;
+	color: white;
+	background: rgba(240,70,94,1);
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
 	#cta-btns div {
 		text-align: center !important;
