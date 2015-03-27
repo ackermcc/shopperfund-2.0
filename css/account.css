@@ -43,6 +43,10 @@ html.account, body.account {
 	font-size: 1.25em;
 }
 
+.title24 {
+	font-size: 2em;
+}
+
 ul.transaction-history {
 	margin: 0;
 	padding: 0;
@@ -85,5 +89,39 @@ ul.form-list {
 
 .card-grid .card {
 	padding: 10px;
+	position: relative;
+}
+
+.card-form {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	/*animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;*/
+}
+
+.card-form .module {
+	width: 100%;
+	height: 100%;
+}
+
+.card-payoff {
+	margin: 20% 0 30% 0;
+}
+
+.card-amount {
+	float: left;
+	width: 70%;
+}
+
+.card-buy {
+	float: left;
+	margin-left: 5%;
+	width: 25%;
 }
 
