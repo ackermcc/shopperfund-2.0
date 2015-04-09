@@ -57,6 +57,7 @@
               <li><a href="summary.html">Summary</a></li>
               <li><a href="offers.html">Offers</a></li>
               <li><a href="#">Blog</a></li>
+              <li><a class="show-alert" href="#">(Show Alert)</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -69,9 +70,9 @@
       <div class="container">
         <div class="row-spacer"></div>
         <div class="row">
-          <div class="col-lg-12">
-            <div class="title">Personal Information</div>
-            <a href="summary.html">Back to Summary</a>
+          <div class="col-lg-12 page-top">
+            <div class="title">Purchase Gift Card</div>
+            <a href="offers.html">Back to Summary</a>
           </div>
         </div>
 
@@ -79,56 +80,55 @@
         <div class="row-spacer-small"></div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <ul class="form-list">
-              <li>
-                <label>First Name</label><br>
-                <input type="text" placeholder="John">
-              </li>
-              <li>
-                <label>Last Name</label><br>
-                <input type="text" placeholder="Doe">
-              </li>
-              <li>
-                <label>Address 1</label><br>
-                <input type="text" placeholder="Number, Street">
-              </li>
-              <li>
-                <label>Address 2</label><br>
-                <input type="text" placeholder="Apt, Ste, PO Box">
-              </li>
-            </ul>
+
+            <!-- personal information -->
+            <div class="module">
+              <div class="module-title">
+                  Purchase Information
+              </div>
+              <div class="module-left">
+                <p>John Doe</p>
+                <p>1000 Washington Rd. Cincinnati, OH 45219</p>
+                <p>(000) 000-0000</p>
+                <p>XXXX-XXXX-XXXX-0000</p>
+                <p class="module-links"><a href="form.html">Edit Purchase Information</a></p>
+              </div>
+            </div>
+            <!-- end personal information -->
           </div>
           <!-- end left -->
 
           <!-- right -->
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
           <div class="row-spacer-small hidden-lg hidden-md"></div>
-            <ul class="form-list">
-              <li>
-                <label>City</label><br>
-                <input type="text" placeholder="City">
-              </li>
-              <li>
-                <label>State</label><br>
-                <input type="text" placeholder="State">
-              </li>
-              <li>
-                <label>Zip Code</label><br>
-                <input type="text" placeholder="00000">
-              </li>
-              <li>
-                <label>Phone Number</label><br>
-                <input type="text" placeholder="(000) 000-0000">
-              </li>
-            </ul>
+            <div class="module">
+              <div class="module-title">
+                <div class="module-left">
+                  Order Summary
+                </div>
+              </div>
+              <ul class="transaction-history">
+                <li>
+                  <div class="module-left">
+                    <img class="checkout-card-img hidden-sm hidden-xs" src="../img/papa-johns.png">
+                    <div class="title18">Papa John's Gift Card</div>
+                    <div class="subtitle">Pay Off Credit <br>$25.00</div>
+                  </div>
+                  <div class="module-right text-right">
+                    <div class="title18">$25.00</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="row-spacer-small"></div>
+            <div class="row checkout-form">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn gray-button">Cancel</button>
+                <button class="btn navy-button">Proceed to checkout</button>
+              </div>
+            </div>
           </div>
           <!-- end right -->
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <button class="btn navy-button">Save Personal Information</button>
-          </div>
         </div>
 
         <div class="row-spacer"></div>
@@ -182,6 +182,18 @@
 
       $('#cancel').click(function(){
         $('#login-alert').fadeOut();
+      });
+
+      function newAlert(title,message) {
+        $('body').find('.page-top').append('<div class="alert"><b>'+title+'</b> <span>'+message+'</span><i class="close-alert fa fa-close"></i></div>');
+        $('.close-alert').click(function(){
+          $(this).closest('.alert').remove();
+        });
+      }
+
+      //TODO:use for alerts
+      $('.show-alert').click(function(){
+        newAlert("Hello World","I need a vacaton");
       });
 
 

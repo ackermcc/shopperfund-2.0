@@ -24,8 +24,26 @@
 	padding: 0.25em;
 }
 
-a:hover {
-	text-decoration: underline;
+button a {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+button a:hover {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.gray-button:hover {
+	color: #fff !important;
+	background: #999;
+	text-decoration: none !important;
+}
+
+.navy-button:hover {
+	color: #fff !important;
+	background: #388496;
+	text-decoration: none !important;
 }
 
 /*end overrides*/
@@ -78,9 +96,13 @@ a, label {
 	color: #195D73;
 }
 
-.active {
+.nav a:hover {
+	color: #fff !important;
+	border-bottom: 5px solid rgba(255,255,255,0.4);
+}
 
-	text-decoration: underline;
+.active {
+	border-bottom: 5px solid #c46b0a;
 }
 
 .header {
@@ -190,6 +212,15 @@ hr {
 
 .career-title {
 	font-size: 1.125em;
+}
+
+.gray-button {
+	font-weight: 700;
+	font-size: 0.865em;
+	background: #666;
+	border-radius: 3px;
+	color: #fff;
+	padding: 7px 15px 8px 15px;
 }
 
 .navy-button {
