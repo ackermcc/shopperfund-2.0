@@ -34,6 +34,24 @@ button a:hover {
 	text-decoration: none !important;
 }
 
+.login-btn.orange-bg:hover {
+	color: #fff !important;
+	background: #ffb55c;
+	text-decoration: none !important;
+}
+
+.login-btn.facebook-bg:hover {
+	color: #fff !important;
+	background: #5979b2;
+	text-decoration: none !important;
+}
+
+.fb-button:hover {
+	color: #fff !important;
+	background: #5979b2;
+	text-decoration: none !important;
+}
+
 .gray-button:hover {
 	color: #fff !important;
 	background: #999;
@@ -192,6 +210,7 @@ hr {
 
 .footer {
 	line-height: 2;
+	text-align: center;
 }
 
 .sub-title {
@@ -230,6 +249,20 @@ hr {
 	border-radius: 3px;
 	color: #fff;
 	padding: 7px 15px 8px 15px;
+}
+
+.fb-button {
+	font-weight: 700;
+	font-size: 0.865em;
+	background: #3B5998;
+	border-radius: 3px;
+	color: #fff;
+	padding: 7px 15px 8px 15px;
+}
+
+.full-width {
+	width: 96%;
+	margin-left: 2%;
 }
 
 /*LOG IN VIEW*/
@@ -274,6 +307,7 @@ hr {
 	margin-top: 0.725em;
 	cursor: pointer;
 	font-weight: 300;
+	width: 100%;
 }
 
 #cancel {
@@ -311,6 +345,16 @@ hr {
 	padding: 10px 20px;
 	color: white;
 	background: rgba(240,70,94,1);
+}
+
+/*SIGN UP*/
+
+#or-break {
+	text-align: center;
+	margin: 1.625em 0;
+	color: #bbb;
+	font-weight: 700;
+	font-style: italic;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
