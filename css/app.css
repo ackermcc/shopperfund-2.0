@@ -192,6 +192,7 @@ hr {
 
 .footer {
 	line-height: 2;
+	text-align: center;
 }
 
 .sub-title {
@@ -230,6 +231,11 @@ hr {
 	border-radius: 3px;
 	color: #fff;
 	padding: 7px 15px 8px 15px;
+}
+
+.full-width {
+	width: 96%;
+	margin-left: 2%;
 }
 
 /*LOG IN VIEW*/
