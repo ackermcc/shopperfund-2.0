@@ -374,6 +374,21 @@ hr {
 	font-style: italic;
 }
 
+/*end sign up*/
+
+/*SPINNER*/
+#spinner-container {
+	background: rgba(0,0,0,0.6);
+	padding: 15px 25px;
+	font-size: 34px;
+	border-radius: 3px;
+	color: #fff;
+	position: absolute;
+	left: calc(50% - (34px/2));
+	margin-top: 100px;
+	z-index: 10;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
 	#cta-btns div {
 		text-align: center !important;
