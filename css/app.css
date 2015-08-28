@@ -127,6 +127,23 @@ html, body {
 	text-align: center;
 }
 
+body .tc {
+	text-align: left !important;
+}
+
+.tc .side-nav {
+	border-right: 1px solid #ddd;
+}
+
+.tc h5 {
+	margin-top: 30px;
+}
+
+.tc li {
+	list-style: none;
+	padding: 10px 0;
+}
+
 a, label {
 	color: #195D73;
 }
@@ -166,7 +183,7 @@ a, label {
 	background-size: 100%;
 	background-position: center -200px;
 	height: 33.563em;*/
-	background: url('../img/coffee-header.jpg') no-repeat center center fixed; 
+	background: url('../img/coffee-header.jpg') no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
